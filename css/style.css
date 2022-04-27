@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+*{margin: 0px; padding: 0px;}
+li, ol, ul{list-style: none;}
+body{
+    color: #222;
+    background:#e5e8ed;
+    font-size: 12px;
+    font-family: 'noto sans kr','arial';
+}
+a{
+    color: #222;
+    text-decoration: none;
+}
+
+#wrap{
+    width: 1400px; height: 800px;
+    margin: 0px auto;
+    padding-top: 40px;
+}
+
+/* gnb */
+.gnb{
+    position: relative;
+    width: 100%; height: 84px;
+    background : #0d0127;
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 4px 6px -4px #27066e;
+}
+.fa-pied-piper-square{
+    float: left;
+    color : transparent;
+    background: linear-gradient(to left top, #3240ff, #89079b);
+    -webkit-background-clip: text;
+    font-size: 40px;
+    padding : 21px 0 0 24px;
+}
+.input_div{
+    float: left;
+    position : relative;
+    width: 180px;
+}
+.input_div a i{
+    position: absolute;
+        top: 35px;
+        right: -94px;
+    color : #bdc3d4;
+}
+input{
+    width: 180px;
+    border : none;
+    border-radius: 20px;
+    color: #bdc3d4;
+    background: #171538;
+    margin: 20px 90px;
+    padding: 13px 12px;
+}
+input::placeholder{
+    padding-left : 6px;
+    color: #bdc3d4;
+}
+.gnb_btn{
+    position: absolute;
+        top: 20px;
+        right: 90px;
+    width: 110px;
+    border-radius: 30px;
+    color : #fff;
+    background: #7020ff;
+    border: 2px solid #7020ff;
+    padding: 10px 18px;
+    letter-spacing: 1px;
+    transition: 0.4s;
+}
+.gnb_btn:hover{
+    border: 2px solid #7020ff;
+    color: #7020ff;
+    background: #fff;
+}
+.gnb_btn i{
+    line-height: 20px;
+}
+.fa-angle-right{
+    float: right;
+}
+.top_profile{
+    position: absolute;
+        top: 23px;
+        right : 24px;
+    width: 40px; height: 40px;
+    background-image: url("../img/profile.jpg");
+    border-radius: 40px;
+}
+
+/* 왼쪽 서브 메뉴 */
+.lnb{
+    float: left;
+    width: 80px; height: 800px;
+    background : #0d0127;
+    border-radius: 0 0 0 20px;
+}
+.lnb ul{padding-top: 220px;}
+.lnb ul li{height: 60px;}
+.lnb ul li a{
+    font-size: 14px;
+    color : #a7aec2;
+}
+.lnb ul li a i{
+    padding-left : 34px;
+    transition: 0.4s;
+}
+.lnb ul li a i:hover{
+    color: #7020ff;
+}
+
+/* Upcoming Event */
+.contents{
+    height: 0px;
+    background : #f5f6fa;
+}
+.contents_champion{
+    float : left;
+    width: 864px; height: 740px;
+    background : #171538;
+    padding-top : 60px;
+}
+.contents_champion span{
+    color: #e2e5ee;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 0 0 71px;
+}
+.contents_champion a{
+    display: block;
+    float : right;
+    width: 120px; height: 35px;
+    color : #fff;
+    background : #0085fe;
+    border-radius: 30px;
+    margin: -5px 72px 0 0;
+    text-align: center;
+    line-height: 35px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+.contents_champion a:hover{
+    background : #727377;
+}
+.event_inner{
+    position: relative;
+    width: 720px; height: 231px;
+    background-image: url("../img/event_img.jpg");
+    border-radius: 10px;
+    margin: 34px auto;
+}
+.event_inner ul{
+    color: rgb(240, 240, 240);
+    padding : 24px 0 0 36px;
+}
+.event_inner ul li:first-child{
+    font-size: 34px;
+    letter-spacing: 2px;
+}
+.event_inner ul li:nth-child(2){
+    color: rgb(197, 197, 197);
+    padding-top: 4px;
+}
+.event_inner ul li:nth-child(3){
+    color: rgb(197, 197, 197);   
+}
+.event_inner ul li:last-child{
+    width: 140px; height: 40px;
+    border: 2px solid #fc23a6;
+    background: #fc23a6;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight : 500;
+    color : #fff;
+    cursor : pointer;
+    letter-spacing : 3px;
+    line-height: 36px;
+    text-align: center;
+    margin-top : 36px;
+    transition: 0.4s;
+}
+.event_inner ul li:last-child:hover{
+    border: 2px solid #fc23a6;
+    background: transparent;
+}
+
+/* 플레이 비디오 */
+.contents_summary{
+    width: 510px;
+    margin: -15px 0 0 74px;
+}
+.contents_summary span{
+    padding-left: 0px;
+}
+.contents_summary .summary_a{
+    font-weight: 400;
+    background: none;
+}
+.contents_summary .summary_a:hover{
+    background : none;
+    color : #0085fe;
+}
+.contents_summary .summary_a i{
+    font-size: 8px;
+}
+.contents_summary .video video{
+    width : 400px;
+    border-radius: 14px;
+    margin-top : 16px;
+}
+
+/* 어바웃 자운 */
+.contents_zaun{
+    float : left;
+    width: 280px; height: 200px;
+    background-image : url('../img/zaun.png');
+}
+
+/* Recent Activity */
+.content_recent{
+    float: left;
+    width: 456px; height: 800px;
+    background: #fff;
+    border-radius: 0 0 20px 0;
+}
