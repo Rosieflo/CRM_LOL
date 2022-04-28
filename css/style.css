@@ -16,7 +16,7 @@ a{
 #wrap{
     width: 1400px; height: 800px;
     margin: 0px auto;
-    padding-top: 40px;
+    padding-top: 60px;
 }
 
 /* gnb */
@@ -25,7 +25,7 @@ a{
     width: 100%; height: 84px;
     background : #0d0127;
     border-radius: 16px 16px 0 0;
-    box-shadow: 0 4px 6px -4px #27066e;
+    box-shadow: 0 3px 6px -4px #27066e;
 }
 .fa-pied-piper-square{
     float: left;
@@ -95,11 +95,11 @@ input::placeholder{
 /* 왼쪽 서브 메뉴 */
 .lnb{
     float: left;
-    width: 80px; height: 800px;
+    width: 80px; height: 740px;
     background : #0d0127;
     border-radius: 0 0 0 20px;
 }
-.lnb ul{padding-top: 220px;}
+.lnb ul{padding-top: 200px;}
 .lnb ul li{height: 60px;}
 .lnb ul li a{
     font-size: 14px;
@@ -120,7 +120,7 @@ input::placeholder{
 }
 .contents_champion{
     float : left;
-    width: 864px; height: 740px;
+    width: 864px; height: 680px;
     background : #171538;
     padding-top : 60px;
 }
@@ -214,16 +214,86 @@ input::placeholder{
 }
 
 /* 어바웃 자운 */
+.zaun{
+    position: relative;
+        left : 500px; bottom: 275px;
+}
+.zaun span{
+    margin-left : -67px;
+}
 .contents_zaun{
-    float : left;
-    width: 280px; height: 200px;
+    width: 292px; height: 227px;
     background-image : url('../img/zaun.png');
+    border-radius : 14px;
+    margin-top: 20px;
+}
+.contents_zaun img{
+    padding : 22px 0 0 22px;
+}
+.contents_zaun p{
+    width: 200px;
+    color : rgb(187, 187, 187);
+    margin : 12px 0 0 22px;
 }
 
 /* Recent Activity */
 .content_recent{
     float: left;
-    width: 456px; height: 800px;
-    background: #fff;
+    width: 456px; height: 740px;
+    background-image: url('../img/zaun_bg.png');
     border-radius: 0 0 20px 0;
+}
+.recent_wrap{
+    width: 400px; height: 680px;
+    background : #171538;
+    border-radius: 20px;
+    /*opacity: 0.7;*/
+    margin: 30px 0 0 28px;
+}
+
+/* 자운 엠블럼 */
+.recent_box{
+    width: 340px; height: 260px;
+    border-bottom: 1px solid #89079b;
+    margin : 0px auto;
+    font-family: 'Libre Baskerville', serif;
+    text-align : center;
+}
+.recent_box p{
+    color : #9e7f4a;
+    font-size: 18px;
+}
+.recent_box span{
+    color : #e2b86a;
+    font-size: 30px;
+    padding-left : 4px;
+}
+.recent_box img{
+    width: 140px;
+    padding-top: 14px;
+}
+
+/* 레나타 스킬 */
+.renata_skill{
+    padding : 30px 0 0 30px;
+}
+.renata_skill li{
+    color : #fff;
+}
+.renata_skill li img{
+    width: 50px;
+    border-radius: 10px;
+}
+.renata_skill li span{
+    position: relative;
+        bottom: 29px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding-left : 10px;
+}
+.renata_skill li p{
+    position: relative;
+        bottom: 28px;
+    color : #adadad;
+    padding : 3px 0 0 64px;
 }
